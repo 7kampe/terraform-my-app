@@ -43,6 +43,11 @@ variable "environment" {
   default = "terraform-test"
 }
 
+variable "test_for_git" {
+  type    = string
+  default = "test for git"
+}
+
 locals {
   team        = "api_mgmt_test_team"
   application = "test_terraform_corp_api"
